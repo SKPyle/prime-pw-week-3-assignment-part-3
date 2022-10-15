@@ -41,10 +41,16 @@ for (let i = 0; i < supplyChanges.length; i++) {
 
 for (let i of supplyChanges) {
   console.log('for...of - supplyChanges:', i);
-  if (supplyChanges > 0) {
-    console.log('added x parts');
+  if (i === 0) {
+    console.log('No change');
+    } else if (i > 0) {
+        console.log('Added', i, 'parts');
+    } else {
+        console.log('Removed', i,  'parts');
+        
+      }
   }
-}
+
     
 
 
